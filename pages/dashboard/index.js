@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import ProfileSummary from '../../components/ProfileSummary';
-import BenefitsGrid from '../../components/BenefitsGrid';
-import RewardsChart from '../../components/RewardsChart';
-import LoadingSkeleton from '../../components/LoadingSkeleton';
+import ProfileSummary from 'components/ProfileSummary';
+import BenefitsGrid from 'components/BenefitsGrid';
+import RewardsChart from 'components/RewardsChart';
+import LoadingSkeleton from 'components/LoadingSkeleton';
 import Layout from 'components/Layout';
 
 function DashboardPage() {

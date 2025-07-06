@@ -1,6 +1,6 @@
 
 "use client";
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from 'context/ThemeContext';
 import ThemeToggle from './ThemeToggle';
 import LogoutButton from './LogoutButton';
 import { Menu } from 'lucide-react';

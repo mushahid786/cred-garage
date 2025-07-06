@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import ProfileSummary from '../../../components/ProfileSummary';
+import ProfileSummary from 'components/ProfileSummary';
 import Layout from 'components/Layout';
 
 function Profile() {

@@ -3,7 +3,7 @@ import { createContext, useContext, useState, useEffect } from 'react';
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState(null); // initially null
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
@@ -17,9 +17,14 @@ export function ThemeProvider({ children }) {
     localStorage.setItem('theme', newTheme);
   };
 
+  // prevent rendering until theme is loaded
+  if (!theme) return null;
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme, isSidebarOpen, setIsSidebarOpen }}>
-      {children}
+      <div className={theme === 'dark' ? 'dark' : ''}>
+        {children}
+      </div>
     </ThemeContext.Provider>
   );
 }

@@ -105,11 +105,15 @@ Folder Structure
 │   ├── index.js (Landing Page)
 │   └── dashboard/
 │       ├── index.js
-│       ├── profile.js
-│       ├── reward.js
-│       └── benefit.js
+│       ├── profile
+│       │   └──index.js   
+│       ├── reward
+│       │   └──index.js  
+│       └── benefit
+│           └──index.js  
 ├── public/
 │   └── screenshots/
+│   └── loomVideo/
 ├── styles/
 │   └── globals.css
 └── README.md
