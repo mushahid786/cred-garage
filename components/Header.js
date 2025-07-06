@@ -3,7 +3,7 @@
 import { useTheme } from '../context/ThemeContext';
 import ThemeToggle from './ThemeToggle';
 import LogoutButton from './LogoutButton';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 
 export default function Header() {
     const { setIsSidebarOpen } = useTheme();

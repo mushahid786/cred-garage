@@ -6,7 +6,6 @@ import ProfileSummary from '../../components/ProfileSummary';
 import BenefitsGrid from '../../components/BenefitsGrid';
 import RewardsChart from '../../components/RewardsChart';
 import LoadingSkeleton from '../../components/LoadingSkeleton';
-import { useTheme } from '@/context/ThemeContext';
 import Layout from 'components/Layout';
 
 function DashboardPage() {
